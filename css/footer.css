@@ -1,0 +1,89 @@
+/* styles for footer start here */
+
+.footer {
+  height: 12vmin;
+  font-family: 'Syncopate';
+}
+
+.labelInfo {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.copyRightLabel{
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+/* social media styles on footer */
+
+.social-media-buttons {
+  text-align: center;
+}
+
+.social-media-button {
+  display: inline-block;
+  width: 8vmin;
+  height: 8vmin;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 100%;
+  position: relative;
+  margin-left: 6vmin;
+  margin-top: 2vmin;
+  cursor: pointer;
+  transition: border-radius .25s, transform .5s, border-color 1s;
+}
+
+.social-media-button i {
+  color: rgb(0, 0, 0);
+  font-size: 4vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color .5s;
+}
+
+.social-media-button:hover {
+  border-radius: 10%;
+  border-color: rgb(70, 70, 70);
+  transform: rotate(360deg);
+}
+
+.social-media-button.facebook:hover i {
+  color: #3b5998;
+}
+
+.social-media-button.instagram:hover i {
+  color: #e7c944;
+}
+
+.social-media-button.envelope:hover i {
+  color: #6e5494;
+}
+
+.social-media-button.phone:hover i {
+  color: #18dd32;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+  .labelInfo {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .copyRightLabel{
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {}

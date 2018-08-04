@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Chathura|Megrim|Syncopate');
+.navbar {
+    font-family: 'Megrim', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.bg-custom {
+    background-color: #010003;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler {
+    border: 0px;
+    border-radius: 0px;
+    border-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: rgb(52, 56, 56);
+    border-color: black;
+}
+
+.dropdown-item {
+    font-family: 'Syncopate';
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 21px;
+    height: 1px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+#mainVideoJumbotron {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.heading{ 
+    font-family: 'Syncopate';
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.top10Heading{
+    font-family: 'Megrim', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+/* blinking animation styles for .top10Heading */
+.blink {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.top10Label{
+    font-family: 'Syncopate';
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.top10Jumbotron{
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    #navBarContainer {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .navbar {
+        font-family: 'Megrim', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .dropdown-item {
+        font-family: 'Syncopate';
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #fff;
+    }
+    #mainVideoJumbotron {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .heading{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 0.9rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .top10Heading{
+        font-family: 'Megrim', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    .top10Jumbotron{
+        padding-top: 0.2rem;
+        padding: 0.5rem;
+    }
+
+    .top10Label{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 0.5rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #navBarContainer {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .navbar {
+        font-family: 'Megrim', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .dropdown-item {
+        font-family: 'Syncopate';
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #fff;
+    }
+    #mainVideoJumbotron {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .heading{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 0.9rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .top10Jumbotron{
+        padding-top: 0.2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .top10Label{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 0.5rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #navBarContainer {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 1000px !important;
+    }
+    .navbar {
+        font-family: 'Megrim', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .dropdown-item {
+        font-family: 'Syncopate';
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    #mainVideoJumbotron {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1.5rem;
+        padding-top: 0.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .heading{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .top10Jumbotron{
+        padding-top: 0.2rem;
+        padding: 1rem;
+    }
+
+    .top10Label{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 0.9rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+}
