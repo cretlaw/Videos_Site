@@ -104,6 +104,18 @@
     padding-bottom: 2.5rem;
 }
 
+.showMoreBtn{
+    width: 50%;
+    font-family: 'Syncopate';
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hideBtn{
+    display: none;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
@@ -157,6 +169,15 @@
         margin-top: 0.1rem;
         margin-bottom: 0.1rem;
     }
+
+    .showMoreBtn{
+        width: 50%;
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */

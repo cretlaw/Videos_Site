@@ -81,120 +81,138 @@
             </nav>
         </div>
 
-        <!-- main video starts here -->
-        <div class="container">
+        <div id="videoApp">
+            <!-- main video starts here -->
+            <div class="container">
 
-            <div class="row justify-content-center">
-                <div class="col">
-                    <div class="jumbotron" id="mainVideoJumbotron">
-                        <h1 class="heading text-center">I, Pet Goat &#8545;</h1>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6n_xCI-peq0" allowfullscreen></iframe>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="jumbotron" id="mainVideoJumbotron">
+                            <h1 class="heading text-center">I, Pet Goat &#8545;</h1>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6n_xCI-peq0" allowfullscreen></iframe>
+                            </div>
+
                         </div>
-
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
 
-        <h1 class="top10Heading text-center">
-            <i class="fas fa-angle-double-down blink"></i> Top 10 Videos
-            <i class="fas fa-angle-double-down blink"></i>
-        </h1>
-
+            <h1 class="top10Heading text-center">
+                <i class="fas fa-angle-double-down blink"></i> Top 10 Videos
+                <i class="fas fa-angle-double-down blink"></i>
+            </h1>
 
 
-        <!-- top 10 start here -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">1. Adam Episode 1</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GXI0l3yqBrA" allowfullscreen></iframe>
+
+            <!-- top 10 start here -->
+            <div class="container">
+                <div class="row justify-content-center">
+
+
+                    <div class="col-6">
+                        <div class="jumbotron top10Jumbotron">
+                            <h2 class="top10Label">1. Adam Episode 1</h2>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GXI0l3yqBrA" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-6">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">2. Divisor</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ugH8cPC_Byg" allowfullscreen></iframe>
+                    <div class="col-6">
+                        <div class="jumbotron top10Jumbotron">
+                            <h2 class="top10Label">2. Divisor</h2>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ugH8cPC_Byg" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-6">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">3. Urbance</h2>
-                        <div class="embed-responsive embed-responsive-16by9 ">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VAeg7GErmXQ" allowfullscreen></iframe>
+                    <div class="col-6">
+                        <div class="jumbotron top10Jumbotron">
+                            <h2 class="top10Label">3. Urbance</h2>
+                            <div class="embed-responsive embed-responsive-16by9 ">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VAeg7GErmXQ" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-6 ">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">4. Breaker</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nAuYKQ-j86s" allowfullscreen></iframe>
+                    <div class="col-6 ">
+                        <div class="jumbotron top10Jumbotron">
+                            <h2 class="top10Label">4. Breaker</h2>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/nAuYKQ-j86s" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-6 ">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">5. Rha</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/muYFZVj-kDY" allowfullscreen></iframe>
-                        </div>
-                    </div>
                 </div>
+            </div>
 
-                <div class="col-6 ">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">6. The Looking Planet</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/A8LRxIANzQs" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+            <div v-bind:class={hideBtn:hideBtn} class="container text-center">
+                <button @click="showRemaingVideos" type="button" class="btn btn-outline-dark btn-lg  showMoreBtn">Show More</button>
+            </div>
 
-                <div class="col-6 ">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">7. Rise</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-3fu2273-DQ" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+            <div v-show="showRemainingContent">
+                <div class="container">
+                    <div class="row justify-content-center">
 
-                <div class="col-6 ">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">8. True Skin</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315 " src="https://www.youtube.com/embed/ETv3eNj46EM" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-6">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">9. Uncanny Valley</h2>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UXX0TRtg5Vk" allowfullscreen></iframe>
+                        <div class="col-6 ">
+                            <div class="jumbotron top10Jumbotron">
+                                <h2 class="top10Label">5. Rha</h2>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/muYFZVj-kDY" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-6">
-                    <div class="jumbotron top10Jumbotron">
-                        <h2 class="top10Label">10. Strange Alloy</h2>
-                        <div class="embed-responsive embed-responsive-16by9 ">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Otnv6QGtksA" allowfullscreen></iframe>
+                        <div class="col-6 ">
+                            <div class="jumbotron top10Jumbotron">
+                                <h2 class="top10Label">6. The Looking Planet</h2>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A8LRxIANzQs" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="col-6 ">
+                            <div class="jumbotron top10Jumbotron">
+                                <h2 class="top10Label">7. Rise</h2>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-3fu2273-DQ" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="jumbotron top10Jumbotron">
+                                <h2 class="top10Label">8. True Skin</h2>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315 " src="https://www.youtube.com/embed/ETv3eNj46EM" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="jumbotron top10Jumbotron">
+                                <h2 class="top10Label">9. Uncanny Valley</h2>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UXX0TRtg5Vk" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="jumbotron top10Jumbotron">
+                                <h2 class="top10Label">10. Strange Alloy</h2>
+                                <div class="embed-responsive embed-responsive-16by9 ">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Otnv6QGtksA" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
