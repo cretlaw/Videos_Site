@@ -25,6 +25,15 @@
         }
     </style>
 
+    <!-- Google AdSense code below -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5369737545493828",
+            enable_page_level_ads: true
+        });
+    </script>
+
     <body>
 
 
@@ -231,15 +240,17 @@
                 </div>
 
             </div>
-            
+
             <div v-if="phoneClick">
-                <p class="labelInfo">{{phone}}<p>
-                    <button @click="toggleButtons" type="button" class="btn btn-outline-dark btn-sm">Toggle Back</button>
+                <p class="labelInfo">{{phone}}
+                    <p>
+                        <button @click="toggleButtons" type="button" class="btn btn-outline-dark btn-sm">Toggle Back</button>
             </div>
 
             <div v-if="emailClick">
-                <p class="labelInfo">{{email}}<p>
-                <button @click="toggleButtons" type="button" class="btn btn-outline-dark btn-sm">Toggle Back</button>
+                <p class="labelInfo">{{email}}
+                    <p>
+                        <button @click="toggleButtons" type="button" class="btn btn-outline-dark btn-sm">Toggle Back</button>
             </div>
 
         </footer>
