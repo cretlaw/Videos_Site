@@ -1,3 +1,17 @@
+let navBarApp = new Vue({
+    el: '#navBarApp',
+    data: {
+        showX: false
+    },
+    methods: {
+
+        toggleX: function () {
+            this.showX = !this.showX;
+        }
+    }
+
+})
+
 let videoApp = new Vue({
 
     el: '#videoApp',

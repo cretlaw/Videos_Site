@@ -33,13 +33,13 @@
     <body>
 
 
-        <div id="navBarContainer">
+        <div id="navBarApp">
             <!--animated X navbar-->
             <!--Navbar-->
             <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-custom justify-content-between">
 
-                <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" onclick='navbarFunction(this)'>
+                <button v-bind:class={change:showX} class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" @click='toggleX'>
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -259,15 +259,13 @@
             </div>
 
             <div v-if="phoneClick">
-                <p class="labelInfo">{{phone}}
-                    <p>
-                        <button @click="toggleButtons" type="button" class="btn btn-outline-dark btn-sm">Toggle Back</button>
+                <p class="labelInfo">{{phone}}</p>
+                <button @click="toggleButtons" type="button" class="btn btn-outline-primary btn-sm toggleBtn">Toggle Back</button>
             </div>
 
             <div v-if="emailClick">
-                <p class="labelInfo">{{email}}
-                    <p>
-                        <button @click="toggleButtons" type="button" class="btn btn-outline-dark btn-sm">Toggle Back</button>
+                <p class="labelInfo">{{email}}</p>
+                <button @click="toggleButtons" type="button" class="btn btn-outline-primary btn-sm toggleBtn">Toggle Back</button>
             </div>
 
         </footer>
@@ -285,8 +283,7 @@
         <!-- Vue cdn targeting the latest version so that future updates won't break code -->
         <script src="https://unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
 
-        <!-- local scripts -->
-        <script type="text/JavaScript " src="js/navBar.js "> </script>
+        
         <!-- This is the where the Vue code resides -->
         <script type="text/JavaScript" src="js/app.js"></script>
     </body>
