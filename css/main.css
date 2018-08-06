@@ -92,14 +92,19 @@
 
 .top10Jumbotron{
     padding-top: 0.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
 }
-
+.video-info{
+    font-family: 'Syncopate';
+    font-weight: 900;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
 .showMoreBtn{
     width: 50%;
     font-family: 'Syncopate';
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -131,13 +136,21 @@
 
     .top10Jumbotron{
         padding-top: 0.2rem;
-        padding: 0.5rem;
+        padding-bottom: 0.2rem;
     }
 
     .top10Label{
         font-size: 0.5rem;
         margin-top: 0.1rem;
         margin-bottom: 0.1rem;
+    }
+
+    .video-info{
+        font-family: 'Syncopate';
+        font-weight: 900;
+        font-size: 0.4rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
     }
 
     .showMoreBtn{
@@ -174,6 +187,8 @@
         margin-top: 0.1rem;
         margin-bottom: 0.1rem;
     }
+
+    
     .showMoreBtn{
         font-size: 1.2rem;
         margin-bottom: 2rem;
