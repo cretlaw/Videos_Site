@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cyborg/bootstrap.min.css">
+
     <!-- local stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css" </head>
@@ -25,19 +27,13 @@
         }
     </style>
 
-    <!-- Google AdSense code below -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-5369737545493828",
-            enable_page_level_ads: true
-        });
+
     </script>
 
     <body>
 
 
-        <div class="container" id="navBarContainer">
+        <div id="navBarContainer">
             <!--animated X navbar-->
             <!--Navbar-->
             <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-custom justify-content-between">
@@ -82,22 +78,25 @@
         </div>
 
         <div id="videoApp">
-            <!-- main video starts here -->
-            <div class="container">
 
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <div class="jumbotron" id="mainVideoJumbotron">
+             <!-- main video starts here -->
+            <div class="jumbotron jumbotron-fluid" id="mainVideoJumbotron">
+                <div class="container-fluid" id="mainVideoContainer">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-7 col-sm-12">
+
                             <h1 class="heading text-center">I, Pet Goat &#8545;</h1>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6n_xCI-peq0" allowfullscreen></iframe>
                             </div>
-
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
+
+            
 
             <h1 class="top10Heading text-center">
                 <i class="fas fa-angle-double-down blink"></i> Top 10 Videos
@@ -151,7 +150,7 @@
             </div>
 
             <div v-bind:class={hideBtn:hideBtn} class="container text-center">
-                <button @click="showRemaingVideos" type="button" class="btn btn-outline-dark btn-lg  showMoreBtn">Show More</button>
+                <button @click="showRemaingVideos" type="button" class="btn btn-outline-primary btn-lg  showMoreBtn">Show More</button>
             </div>
 
             <div v-show="showRemainingContent">
