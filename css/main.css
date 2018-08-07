@@ -58,6 +58,10 @@
     font-size: 2rem;
 }
 
+#setOfAds2{
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+}
 .top10Heading{
     font-family: 'Megrim', sans-serif;
     font-weight: 900;
@@ -131,7 +135,9 @@
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
-
+    #setOfAds1{
+        padding-top: 1rem;
+    }
     .top10Heading{
         font-size: 2rem;
         margin-top: .5rem;
@@ -163,6 +169,10 @@
         margin-top: 0.1rem;
         width: 64%;
     }
+
+    .img-flui{
+        max-width: 30%;
+    }
     
 }
 
@@ -183,6 +193,9 @@
         margin-bottom: 0.1rem;
     }
 
+    #setOfAds1{
+        padding-top: 1rem;
+    }
     .top10Jumbotron{
         padding-top: 0.2rem;
         padding-bottom: 0.5rem;
@@ -222,6 +235,10 @@
     .heading{
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
+    }
+
+    #setOfAds1{
+        padding-top: 1rem;
     }
 
     .top10Label{

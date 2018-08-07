@@ -38,8 +38,8 @@
             <!--Navbar-->
             <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-custom justify-content-between">
 
-                <button v-bind:class={change:showX} class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" @click='toggleX'>
+                <button v-bind:class={change:showX} class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" @click='toggleX'>
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -79,24 +79,42 @@
 
         <div id="videoApp">
 
-             <!-- main video starts here -->
+            <!-- main video starts here -->
             <div class="jumbotron jumbotron-fluid" id="mainVideoJumbotron">
                 <div class="container-fluid" id="mainVideoContainer">
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-7 col-sm-12">
-
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mx-auto">
                             <h1 class="heading text-center">I, Pet Goat &#8545;</h1>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6n_xCI-peq0" allowfullscreen></iframe>
                             </div>
                         </div>
 
+                        <!-- Ads in a column if in desktop and in a row on mobile -->
+                        <div class="col-12 col-lg-2">
+                            <div class="row justify-content-center" id="setOfAds1">
+                                <div class="col-3 col-lg-12">
+                                    <img src="images/ads.jpg" class="img-fluid" alt="ad1">
+                                </div>
+
+                                <div class="col-3 col-lg-12">
+                                    <img src="images/ads.jpg" class="img-fluid" alt="ad2">
+                                </div>
+
+                                <div class="col-3 col-lg-12">
+                                    <img src="images/ads.jpg" class="img-fluid" alt="ad3">
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-            
+
+
+
 
             <h1 class="top10Heading text-center">
                 <i class="fas fa-angle-double-down blink"></i> Top 10 Videos
@@ -118,7 +136,7 @@
                             </div>
 
                             <pre class="video-info"><i class="fas fa-tv"></i> Unity     <i class="fas fa-eye"></i> 10,232,078</pre>
-                            
+
                         </div>
                     </div>
 
@@ -166,6 +184,26 @@
             </div>
 
             <div v-show="showRemainingContent">
+
+                <!-- Leaderboard with 3 ads -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center" id="setOfAds2">
+                        <div class="col-3">
+                            <img src="images/ads.jpg" class="img-fluid" alt="ad1">
+                        </div>
+
+                        <div class="col-3">
+                            <img src="images/ads.jpg" class="img-fluid" alt="ad2">
+                        </div>
+
+                        <div class="col-3">
+                            <img src="images/ads.jpg" class="img-fluid" alt="ad3">
+                        </div>
+
+                    </div>
+                </div>
+
+
                 <div class="container-fluid">
                     <div class="row justify-content-center">
 
@@ -176,7 +214,7 @@
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/muYFZVj-kDY" allowfullscreen></iframe>
                                 </div>
-                                
+
                                 <pre class="video-info"><i class="fas fa-tv"></i> TheCGBros     <i class="fas fa-eye"></i> 2,831,493</pre>
 
                             </div>
@@ -313,7 +351,7 @@
         <!-- Vue cdn targeting the latest version at the time so that future updates won't break code -->
         <script src="https://unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
 
-        
+
         <!-- This is the where the Vue code resides -->
         <script type="text/JavaScript" src="js/app.js"></script>
     </body>
