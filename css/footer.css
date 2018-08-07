@@ -2,6 +2,7 @@
 
 .footer {
   height: 12vmin;
+  margin-top: 3rem;
   font-family: 'Syncopate';
 }
 
@@ -74,7 +75,9 @@
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
-
+.footer{
+  margin-top: 0.5rem;
+}
   .labelInfo {
     font-size: 0.7rem;
   }
