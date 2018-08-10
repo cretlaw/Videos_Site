@@ -12,24 +12,6 @@ let navBarApp = new Vue({
 
 })
 
-let videoApp = new Vue({
-
-    el: '#videoApp',
-
-    data: {
-        showRemainingContent: false,
-        hideBtn: false
-    },
-
-    methods: {
-        showRemaingVideos: function () {
-            this.showRemainingContent = true
-            this.hideBtn = true
-        }
-    }
-
-})
-
 
 let footerApp = new Vue({
     el: '#footerApp',
