@@ -58,6 +58,11 @@
     font-size: 2rem;
 }
 
+#mainVideoContainer{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 #setOfAds2{
     padding-top: 0.5rem;
     padding-bottom: 2.5rem;
@@ -136,7 +141,7 @@
         margin-bottom: 0.5rem;
     }
     #setOfAds1{
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     .top10Heading{
         font-size: 2rem;
@@ -170,10 +175,7 @@
         width: 64%;
     }
 
-    .img-flui{
-        max-width: 30%;
-    }
-    
+   
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -194,7 +196,7 @@
     }
 
     #setOfAds1{
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     .top10Jumbotron{
         padding-top: 0.2rem;
@@ -238,7 +240,7 @@
     }
 
     #setOfAds1{
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
 
     .top10Label{
